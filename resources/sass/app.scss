@@ -1,0 +1,44 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'openiconic';
+
+// Components
+@import 'mainsearch';
+@import 'autocomplete';
+
+body {
+    background-color: #fff;
+}
+
+// Modal
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.autocomplete-results {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    cursor:pointer;
+}
